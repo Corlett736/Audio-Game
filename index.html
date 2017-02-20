@@ -2,13 +2,24 @@
 <html>
 <head>
 <style>
- 
+   button {
+        background: lightblue;
+        color: white;
+        font-size: 2em;
+    }
 </style>
 </head>
 <body>
 <button type="button">Dropdown</button>
+ 
 
 <script>
+var button = document.getElementById("button");
+button.ontouchstart = dropDown;
+ function dropDown(event)
+ {
+  
+}
 </script>
 
 </body>
