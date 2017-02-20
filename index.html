@@ -10,6 +10,8 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: black;
+    border: 1px solid white;
+    border-radius: 2px;
 }
 
 li {
@@ -38,7 +40,9 @@ li a:hover {
     .droplinks a { 
         color: blue;
         padding: 25px;  
-        display: inline-table; 
+        display: block;
+        border: 1px solid white;
+        border-radius: 2px;
         
     } 
     .dropbutton:hover .droplinks{  
@@ -50,7 +54,7 @@ li a:hover {
 <body>
 
 <ul>
-  <li class="dropbutton" ><a href="#Home">Home</a></li>
+  <li class="dropbutton" ><a href="#Home">Homeeee</a></li>
   <li class="dropbutton" ><a href="#Quiz">Multiple-Choice Quizes</a> 
      <div class="droplinks"> <a href="#BPMQuiz">Bpm Quiz</a> <a href="#KsQuiz">Key Signature Quiz</a> <a href="#PQuiz">Pitch Quiz</a> <a href="#RQuiz">Random Quiz</a> </div> </li>
   <li class="dropbutton" ><a href="#HQuiz">Harder Quizes</a>
