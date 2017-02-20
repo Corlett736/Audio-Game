@@ -1,18 +1,8 @@
+<!DOCTYPE html>
 <html>
 <head>
- <style>
-  <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
- h1 {
- font-size: 80px;
- }
-  .dropbtn {
+<style>
+.dropbtn {
     background-color: #4CAF50;
     color: white;
     padding: 16px;
@@ -24,9 +14,12 @@
 .dropbtn:hover, .dropbtn:focus {
     background-color: #3e8e41;
 }
+
 .dropdown {
+    float: right;
     position: relative;
     display: inline-block;
+    
 }
 
 .dropdown-content {
@@ -34,9 +27,12 @@
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
+    overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
     z-index: 1;
 }
+
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -44,17 +40,33 @@
     display: block;
 }
 
+.dropdown a:hover {background-color: #f1f1f1}
 
-.dropdown-content a:hover {background-color: #f1f1f1}
 .show {display:block;}
- </style>
- /* When the user clicks on the button, 
+</style>
+</head>
+<body>
+
+<h2>Aligned Dropdown Content</h2>
+<p>Use <strong>float: right</strong> on the dropdown class to float the dropdown menu to the right, and <strong>right:0</strong> on the dropdown-content if you want the dropdown content to go from right to left.</p>
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown menu if the user clicks outside of it
+// Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
 
@@ -68,12 +80,7 @@ window.onclick = function(event) {
     }
   }
 }
-Try it Yourself »
+</script>
 
-</head>
-<body>
-
-<h1>M888888</h1>
 </body>
-
 </html>
