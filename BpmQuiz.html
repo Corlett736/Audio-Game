@@ -107,6 +107,7 @@ li a:hover {
     <div id= "heading">
         <div class = heading1>
         <h1> IS THIS A QUESTION? </h1>
+            <button id= "playbutton">Play Question</button>
             <audio id="audio1" controls>
                 <source src="C-E.wav"></source>
             </audio>
@@ -123,19 +124,26 @@ li a:hover {
 </ul>
 </body>
     <script>
-           var correctbutton = document.getElementbyId("correct");
+        var play = document.getElementById("playbutton");
+        element.addEventListener("click", Playsound);
+        function Playsound(event)
+        {
+            audio1.play();
+            console.log("playing");
+        }
+           var correctbutton = document.getElementById("correct");
        element.addEventListener("click", correctanswer);
 function correctanswer(event) {
  background-color: green;
         color:white;
-    console.log("correct answer")
+    console.log("correct answer");
 }
-             var incorrectbutton = document.getElementbyId("incorrect");
+             var incorrectbutton = document.getElementById("incorrect");
        element.addEventListener("click", incorrectanswer);
 function incorrectanswer(event) {
  background-color: red;
         color:white;
-    console.log("incorrect answer")
+    console.log("incorrect answer");
 }
         </script>
 </html>
