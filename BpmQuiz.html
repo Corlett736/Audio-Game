@@ -91,16 +91,16 @@ li a:hover {
     }
     .heading1
     {
-          margin: 0;
+    margin: 0;
     padding: 0;
-        width: 450px;
-        height: 100px;
+    width: 450px;
+    height: 100px;
     }
 </style>
 </head>
 <body>
 <ul>
-  <li class="dropbutton" ><a href="index.html">Home!</a></li>
+  <li class="dropbutton" ><a href="index.html">Home!!</a></li>
   <li class="dropbutton" ><a href="#Quiz">Multiple-Choice Quizzes</a> 
      <div class="droplinks"> <a href="BpmQuiz.html">Bpm Quiz</a> <a href="#KsQuiz">Key Signature Quiz</a> <a href="#PQuiz">Pitch Quiz</a> <a href="#RQuiz">Random Quiz</a> </div> </li>
   <li class="dropbutton" ><a href="HarderQuiz">Harder Quizzes</a>
@@ -112,11 +112,24 @@ li a:hover {
     </div>
     <div>
 <ul id="button">
-<button >omg no!!</button>
-<button >why is this doing this?!?!?!</button>
-<button >gg</button>
-<button >yes. if this is an answer.</button>
+<button id="incorrect">omg no!!</button>
+<button id="incorrect">why is this doing this?!?!?!</button>
+<button id="incorrect">gg</button>
+<button id="correct">yes. if this is an answer.</button>
     </div>
+        
+        var correctbutton = document.getElementbyId("correct");
+       element.addEventListener("click", correctanswer);
+function correctanswer(event) {
+ background-color: green;
+        color:white;
+}
+             var incorrectbutton = document.getElementbyId("incorrect");
+       element.addEventListener("click", incorrectanswer);
+function incorrectanswer(event) {
+ background-color: red;
+        color:white;
+}
 </ul>
 </body>
 </html>
