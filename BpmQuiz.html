@@ -100,7 +100,7 @@ li a:hover {
 </head>
 <body>
 <ul>
-  <li class="dropbutton" ><a href="index.html">Home!!</a></li>
+  <li class="dropbutton" ><a href="index.html">Home!</a></li>
   <li class="dropbutton" ><a href="#Quiz">Multiple-Choice Quizzes</a> 
      <div class="droplinks"> <a href="BpmQuiz.html">Bpm Quiz</a> <a href="#KsQuiz">Key Signature Quiz</a> <a href="#PQuiz">Pitch Quiz</a> <a href="#RQuiz">Random Quiz</a> </div> </li>
   <li class="dropbutton" ><a href="HarderQuiz">Harder Quizzes</a>
@@ -118,7 +118,10 @@ li a:hover {
 <button id="correct">yes. if this is an answer.</button>
     </div>
         
-        var correctbutton = document.getElementbyId("correct");
+ 
+</ul>
+</body>
+           var correctbutton = document.getElementbyId("correct");
        element.addEventListener("click", correctanswer);
 function correctanswer(event) {
  background-color: green;
@@ -130,6 +133,4 @@ function incorrectanswer(event) {
  background-color: red;
         color:white;
 }
-</ul>
-</body>
 </html>
