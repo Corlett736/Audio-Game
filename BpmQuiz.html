@@ -114,7 +114,7 @@ li a:hover {
 </ul>
     <div id= "heading">
         <div class = heading1>
-        <h1> IS THIS A QUESION? </h1>
+        <h1> IS THIS A QUESTION? </h1>
             <button id= "playbutton">Play Question</button>
             <audio id="audio1" >
                 <source src="C-E.wav"></source>
@@ -125,14 +125,13 @@ li a:hover {
     <li class= "button"><b> omg no!! </b></li>
 <li class= "button"><b> why is this doing this?!?!?! </b></li>
 <li class= "button"><b> gg</b></li>
-<li class= "button"><b> yes. if this is an answer. </b></li>
+<li class= "correctanswer"><b> yes. if this is an answer. </b></li>
     </div>
         
  
 </ul>
     <script>
-        var play = document.getElementById("playbutton");
-        element.addEventListener("click", Playsound);
+     document.getElementById("playbutton").onclick= function() {Playsound()};  
         function Playsound(event)
         {
             audio1.play();
