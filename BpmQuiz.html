@@ -115,7 +115,9 @@ li a:hover {
     <div id= "heading">
         <div class = heading1>
         <h1> IS THIS A QUESTION? </h1>
-            <button type= button onclick="Playsound()">Play Question</button>
+            </div>
+        <div>
+            <button type= button onclick="Playsound()"> Play Question</button>
             <audio id="audio1" controls >
                 <source src="C-E.wav"></source>
             </audio>
@@ -134,12 +136,9 @@ li a:hover {
         function Playsound()
         {
             var audio1 = document.getElementById("audio1");
-            
-            if (audio1.paused){
+         
             audio1.play();
-            } else {
-                audio1.pause();
-            }
+          
             
         }
            var correctbutton = document.getElementById("correct");
