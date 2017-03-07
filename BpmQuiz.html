@@ -103,8 +103,11 @@ li a:hover {
         background-color:green;
     }
 </style>
+    <script> src = "https://rawgit.com/Tonejs/Tone.js/master/build/Tone.js"</script>
+     <script> src = https://rawgit.com/lsu-emdm/nexusUI/master/dist/nexusUI.js</script>
 </head>
 <body>
+    
 <ul>
   <li class="dropbutton" ><a href="index.html">Home!</a></li>
   <li class="dropbutton" ><a href="#Quiz">Multiple-Choice Quizzes</a> 
@@ -117,7 +120,6 @@ li a:hover {
         <h1> IS THIS A QUESTION? </h1>
             </div>
         <div>
-            <button type= button onclick="Playsound()"> Play Question</button>
             <audio id="audio1" controls >
                 <source src="C-E.wav"></source>
             </audio>
@@ -133,14 +135,22 @@ li a:hover {
  
 </ul>
     <script> 
-        function Playsound()
+        nx.onload = function() 
         {
-            var audio1 = document.getElementById("audio1");
-         
-            audio1.play();
-          
-            
+            button1.on("*", buttonActions);
         }
+        function buttonActions(event)
+        {
+            if (event.press != undefined)
+            {
+                if (event press = 1)
+                {
+                    console.log("make a noise here");
+                    audio1.play();
+                }
+            }
+        }    
+            
            var correctbutton = document.getElementById("correct");
        element.addEventListener("click", correctanswer);
 function correctanswer(event) {
