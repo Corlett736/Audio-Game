@@ -1,162 +1,161 @@
 <!DOCTYPE html>
 <html>
-<head>
-      <script src = "https://rawgit.com/Tonejs/Tone.js/master/build/Tone.js"></script>
-     <script src = "https://rawgit.com/lsu-emdm/nexusUI/master/dist/nexusUI.js"></script>
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-    
-    
-}
-li {
-    float: left;
-}
-li a {
-    display: block;
-    border-radius: 15px;
-    color: blue;
-    background-color: black;
-    text-align: center; 
-    font-size: 500%;
-    padding: 25px;
-    text-decoration: none;
-    border: solid 2px blue;
-    width: 267px;
-    height:300px;
-   
-}
-li a:hover {
-    color: black;
-    background-color: blue;
-}
-    .droplinks 
-    {
-        border-radius: 15px;
-        position: absolute;  
-        min-width: 140px; 
-        display: none; 
-        width: 318px;
-        border: solid 2px white;
-        height: 620px;
+    <head>
+        <script src = "https://rawgit.com/Tonejs/Tone.js/master/build/Tone.js"></script>
+        <script src = "https://rawgit.com/lsu-emdm/nexusUI/master/dist/nexusUI.js"></script>
+        <style>
+            ul
+            {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: white;
+            }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            border-radius: 15px;
+            color: blue;
+            background-color: black;
+            text-align: center;
+            font-size: 500%;
+            padding: 25px;
+            text-decoration: none;
+            border: solid 2px blue;
+            width: 267px;
+            height:300px;
+            
+        }
+        li a:hover {
+            color: black;
+            background-color: blue;
+        }
+        .droplinks
+        {
+            border-radius: 15px;
+            position: absolute;
+            min-width: 140px;
+            display: none;
+            width: 318px;
+            border: solid 2px white;
+            height: 620px;
+            
+        }
+        .droplinks a {
+            border-radius: 15px;
+            background-color: black;
+            color: blue;
+            padding: 25px;
+            display: block;
+            font-size: 275%;
+            height: 100px;
+            width: 265px;
+        }
+        .dropbutton:hover .droplinks{
+            display: block;
+        }
+        li b {
+            display: block;
+            border-radius: 15px;
+            color: white;
+            background-color: lightblue;
+            text-align: center;
+            font-size: 400% ;
+            padding: 25px;
+            text-decoration: none;
+            border: solid 2px black;
+            width: 420px;
+            height:400px;
+            
+        }
+        li b:hover
+        {
+            background-color: white;
+            color: lightblue;
+        }
+        div{
+            background-color: white;
+            width: 950px;
+            height: 650px;
+            margin:0;
+            padding:0;
+        }
+        #heading
+        {
+            color: black;
+            background-color: white;
+        }
         
-    } 
-    .droplinks a {
-        border-radius: 15px;
-        background-color: black;
-        color: blue;
-        padding: 25px;  
-        display: block;
-        font-size: 275%;
-        height: 100px;
-        width: 265px;
-    } 
-    .dropbutton:hover .droplinks{  
-        display: block; 
-    }
-    li b {
-    display: block;
-    border-radius: 15px;
-    color: white;
-    background-color: lightblue;
-    text-align: center; 
-    font-size: 400% ;
-    padding: 25px;
-    text-decoration: none;
-    border: solid 2px black;
-    width: 420px;
-    height:400px;
+        button
+        {
+            
+            border-radius: 15px;
+            width: 200px;
+            height: 100px;
+            font-size = 150%
+            color: blue;
+            background-color:black;
+        }
+        </style>
         
-}
-   li b:hover
-    {
-      background-color: white;
-        color: lightblue;
-    }
-    div{
-    background-color: white;
-    width: 950px;
-    height: 650px;
-        margin:0;
-        padding:0;      
-    }
-    #heading 
-    {
-    color: black;
-    background-color: white;
-    }
-   
-    button
-    { 
+    </head>
+    <body>
         
-      border-radius: 15px;
-        width: 200px;
-    height: 100px;
-          font-size = 150%
-        color: blue;
-        background-color:black;
-    }
-</style>
-  
-</head>
-<body>
-    
-<ul>
-  <li class="dropbutton" ><a href="index.html">Home</a></li>
-  <li class="dropbutton" ><a href="#Quiz">Multiple-Choice Quizzes</a> 
-     <div class="droplinks"> <a href="BpmQuiz.html">Bpm Quiz</a> <a href="#KsQuiz">Key Signature Quiz</a> <a href="#PQuiz">Pitch Quiz</a> <a href="#RQuiz">Random Quiz</a> </div> </li>
-  <li class="dropbutton" ><a href="HarderQuiz">Harder Quizzes</a>
-    <div class="droplinks"> <a href="#BpmQuiz.html">Bpm Quiz</a> <a href="#KsQuiz">Key Signature Quiz</a> <a href="#PQuiz">Pitch Quiz</a> <a href="#RQuiz">Random Quiz</a> </div> </li>
-</ul>
-    <div>
-   
-        <h1> PRESS THE BUTTON TO PLAY THE QUESTION! </h1>
-              <button id= playButton>Play question</button>
-        
+        <ul>
+            <li class="dropbutton" ><a href="index.html">Home</a></li>
+            <li class="dropbutton" ><a href="#Quiz">Multiple-Choice Quizzes</a>
+                <div class="droplinks"> <a href="BpmQuiz.html">Bpm Quiz</a> <a href="#KsQuiz">Key Signature Quiz</a> <a href="#PQuiz">Pitch Quiz</a> <a href="#RQuiz">Random Quiz</a> </div> </li>
+            <li class="dropbutton" ><a href="HarderQuiz">Harder Quizzes</a>
+                <div class="droplinks"> <a href="#BpmQuiz.html">Bpm Quiz</a> <a href="#KsQuiz">Key Signature Quiz</a> <a href="#PQuiz">Pitch Quiz</a> <a href="#RQuiz">Random Quiz</a> </div> </li>
+        </ul>
+        <div>
+            
+            <h1> PRESS THE BUTTON TO PLAY THE QUESTION! </h1>
+            <button id= playButton>Play question</button>
+            
             <audio id="audio1" >
                 <source src="C-E.wav"></source>
             </audio>
-  
-    <div>
-<ul id="button">
-    <li class= "incorrectanswer"><b> omg no!! </b></li>
-<li class= "incorrectanswer"><b> why is this doing this?!?!?! </b></li>
-<li class= "incorrectanswer"><b> gg</b></li>
-<li class= "correctanswer"><b> yes. if this is an answer. </b></li>
-    </div>
-        
- 
-</ul>
-   
-    <script> 
-      var playPause = document.getElementById("playButton");
-      element.addEventListener("click", playPause);
-      function playPause(event) 
-          {
-     console.log("Playing Question!");
-                audio1.play();
-      }
-  
-        
             
-           var correctbutton = document.getElementById("correct");
-       element.addEventListener("click", correctanswer);
-function correctanswer(event) {
- background-color: green;
-        color:white;
-    console.log("correct answer");
-}
-             var incorrectbutton = document.getElementById("incorrect");
-       element.addEventListener("click", incorrectanswer);
-function incorrectanswer(event) {
- background-color: red;
-        color:white;
-    console.log("incorrect answer");
-}
-        </script>
-    </body>
+            <div>
+                <ul id="button">
+                    <li class= "incorrectanswer"><b> omg no!! </b></li>
+                    <li class= "incorrectanswer"><b> why is this doing this?!?!?! </b></li>
+                    <li class= "incorrectanswer"><b> gg</b></li>
+                    <li class= "correctanswer"><b> yes. if this is an answer. </b></li>
+                    </div>
+            
+            
+            </ul>
+            
+            <script> 
+                var playPause = document.getElementById("playButton");
+                playPause.addEventListener("click", playPause);
+                function playPause(event) 
+                {
+                    console.log("Playing Question!");
+                    audio1.play();
+                }
+            
+            
+            
+            var correctbutton = document.getElementById("correctanswer");
+            correctbutton.addEventListener("click", correctanswer);
+            function correctanswer(event) {
+                background-color: green;
+                color:white;
+                console.log("correct answer");
+            }
+            var incorrectbutton = document.getElementById("incorrectanswer");
+            incorrectbutton.addEventListener("click", incorrectanswer);
+            function incorrectanswer(event) {
+                background-color: red;
+                color:white;
+                console.log("incorrect answer");
+            }
+            </script>
+            </body>
 </html>
