@@ -105,7 +105,7 @@
     <body>
         
         <ul>
-            <li class="dropbutton" ><a href="index.html">Home!</a></li>
+            <li class="dropbutton" ><a href="index.html">Home</a></li>
             <li class="dropbutton" ><a href="#Quiz">Multiple-Choice Quizzes</a>
                 <div class="droplinks"> <a href="BpmQuiz.html">Bpm Quiz</a> <a href="#KsQuiz">Key Signature Quiz</a> <a href="#PQuiz">Pitch Quiz</a> <a href="#RQuiz">Random Quiz</a> </div> </li>
             <li class="dropbutton" ><a href="HarderQuiz">Harder Quizzes</a>
@@ -114,14 +114,14 @@
         <div>
             
             <h1> PRESS THE BUTTON TO PLAY THE QUESTION! </h1>
-            <button id= "playButton">Play question</button>
+            <button id= "button1">Play question</button>
             
             <audio id="audio1" >
                 <source src="C-E.wav"></source>
             </audio>
             
             <div>
-                <ul id="button">
+                <ul>
                     <li class= "incorrectanswer"><b> omg no!! </b></li>
                     <li class= "incorrectanswer"><b> why is this doing this?!?!?! </b></li>
                     <li class= "incorrectanswer"><b> gg</b></li>
@@ -132,28 +132,13 @@
             </ul>
             
             <script>
-                var playPause = document.getElementById("playButton");
-                playPause.addEventListener("click", playPause);
-                function playPause(event)
+                var button1 = document.getElementById("button1");
+                button1.addEventListener("click", buttonActions);
+                function buttonActions(event)
                 {
                     console.log("Playing Question!");
                     audio1.play();
                 }
-            var correctbutton = document.getElementById("correctanswer");
-            correctbutton.addEventListener("click", correctanswer);
-            function correctanswer(event) {
-                background-color: green;
-                color:white;
-                console.log("correct answer");
-            }
-            var incorrectbutton = document.getElementById("incorrectanswer");
-            incorrectbutton.addEventListener("click", incorrectanswer);
-            function incorrectanswer(event) {
-                background-color: red;
-                color:white;
-                console.log("incorrect answer");
-            }
-
             
             
                 </script>
