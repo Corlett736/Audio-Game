@@ -122,10 +122,10 @@
             
             <div>
                 <ul>
-                    <li class= "incorrectanswer"><b> omg no!! </b></li>
-                    <li class= "incorrectanswer"><b> why is this doing this?!?!?! </b></li>
-                    <li class= "incorrectanswer"><b> gg</b></li>
-                    <li class= "correctanswer"><b> yes. if this is an answer. </b></li>
+                    <li id= "incorrectanswer"><b> omg no!! </b></li>
+                    <li id= "incorrectanswer"><b> why is this doing this?!?!?! </b></li>
+                    <li id= "incorrectanswer"><b> gg</b></li>
+                    <li id= "correctanswer"><b> yes. if this is an answer. </b></li>
                     </div>
             
             
@@ -139,6 +139,14 @@
                     console.log("Playing Question!");
                     audio1.play();
                 }
+            var button2 = document.getElementById("correctanswer");
+                button2.addEventListener("click", Correct);
+                function correct(event)
+                {
+                    console.log("Correct!");
+                    
+                }
+            
             
             
                 </script>
