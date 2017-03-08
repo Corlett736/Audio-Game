@@ -89,20 +89,14 @@ li a:hover {
     color: black;
     background-color: white;
     }
-    .heading1
-    {
-    margin: 0;
-    padding: 0;
-    width: 450px;
-    height: 100px;
-    }
+   
     button
     { 
       border-radius: 15px;
         width: 200px;
     height: 100px;
-        color: red;
-        background-color:green;
+        color: black;
+        background-color:pink;
     }
 </style>
   
@@ -117,9 +111,9 @@ li a:hover {
     <div class="droplinks"> <a href="#BpmQuiz.html">Bpm Quiz</a> <a href="#KsQuiz">Key Signature Quiz</a> <a href="#PQuiz">Pitch Quiz</a> <a href="#RQuiz">Random Quiz</a> </div> </li>
 </ul>
     <div id= "heading">
-        <div class = heading1>
+   
         <h1> PRESS THE BUTTON TO PLAY THE QUESTION! </h1>
-              <canvas nx= "button"> </canvas>
+              <button>playbutton!</button>
         </div>
             <audio id="audio1" >
                 <source src="C-E.wav"></source>
@@ -137,21 +131,15 @@ li a:hover {
 </ul>
    
     <script> 
-        nx.onload = function() 
-        {
-            button1.on("*", buttonActions);
-        }
-        function buttonActions(event)
-        {
-            if (event.press != undefined)
-            {
-                if (event.press == 1)
-                {
-                    console.log("make a noise here");
-                    audio1.play();
-                }
-            }
-        }    
+      var playButton = document.getElementById("playButton");
+      element.addEventListener("click", playPause);
+      function playPause(event) 
+          {
+     console.log("Playing Question!");
+                audio1.play();
+      }
+  
+        
             
            var correctbutton = document.getElementById("correct");
        element.addEventListener("click", correctanswer);
