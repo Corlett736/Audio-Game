@@ -112,7 +112,7 @@
     <body>
         
         <ul>
-            <li class="dropbutton" ><a href="index.html">Home</a></li>
+            <li class="dropbutton" ><a href="index.html">Home!</a></li>
             <li class="dropbutton" ><a href="#Quiz">Multiple-Choice Quizzes</a>
                 <div class="droplinks"> <a href="BpmQuiz.html">Bpm Quiz</a> <a href="#KsQuiz">Key Signature Quiz</a> <a href="#PQuiz">Pitch Quiz</a> <a href="#RQuiz">Random Quiz</a> </div> </li>
             <li class="dropbutton" ><a href="HarderQuiz">Harder Quizzes</a>
@@ -129,9 +129,9 @@
             
             <div>
                 <ul>
-                    <li class= "button" id= "incorrectanswer"><b> omg no!! </b></li>
-                    <li class= "button" id= "incorrectanswer"><b> why is this doing this?!?!?! </b></li>
-                    <li class= "button" id= "incorrectanswer"><b> gg</b></li>
+                    <li class= "button" id= "incorrectanswer1"><b> omg no!! </b></li>
+                    <li class= "button" id= "incorrectanswer2"><b> why is this doing this?!?!?! </b></li>
+                    <li class= "button" id= "incorrectanswer3"><b> gg</b></li>
                     <li class= "button" id= "correctanswer"><b> yes. if this is an answer. </b></li>
                     </div>
             
@@ -152,18 +152,34 @@
                 {
                 
                     console.log("Correct!");
+                    document.getElementById("correctanswer").style.backgroundcolor = green;
                     
                 }
             
-            var button3 = document.getElementById("incorrectanswer");
+            var button3 = document.getElementById("incorrectanswer1");
                 button3.addEventListener("click", inCorrect);
                 function inCorrect(event)
                 {
                     console.log("Incorrect!");
-                    
+                    document.getElementById("correctanswer").style.backgroundcolor = red;
                     
                 }
-            
+             var button4 = document.getElementById("incorrectanswer2");
+                button4.addEventListener("click", inCorrect);
+                function inCorrect(event)
+                {
+                    console.log("Incorrect!");
+                    document.getElementById("correctanswer").style.backgroundcolor = red;
+                    
+                }
+                 var button5 = document.getElementById("incorrectanswer3");
+                button5.addEventListener("click", inCorrect);
+                function inCorrect(event)
+                {
+                    console.log("Incorrect!");
+                    document.getElementById("correctanswer").style.backgroundcolor = red;
+                    
+                }
                 </script>
             </body>
 </html>
