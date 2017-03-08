@@ -64,7 +64,7 @@ li a:hover {
     color: white;
     background-color: lightblue;
     text-align: center; 
-    font-size: 300% ;
+    font-size: 400% ;
     padding: 25px;
     text-decoration: none;
     border: solid 2px black;
@@ -121,7 +121,7 @@ li a:hover {
         <h1> PRESS THE BUTTON TO PLAY THE QUESTION! </h1>
               <canvas nx= "button"> </canvas>
         </div>
-            <audio id="audio1" controls >
+            <audio id="audio1" >
                 <source src="C-E.wav"></source>
             </audio>
   
@@ -145,7 +145,7 @@ li a:hover {
         {
             if (event.press != undefined)
             {
-                if (event press = 1)
+                if (event.press == 1)
                 {
                     console.log("make a noise here");
                     audio1.play();
