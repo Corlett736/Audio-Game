@@ -96,6 +96,17 @@
             color: blue;
             background-color:black;
         }
+       #button2
+        {
+            
+            left: 320px;
+            border-radius: 15px;
+            width: 900px;
+            height: 400px;
+            font-size: 200%;
+            color: blue;
+            background-color:black;
+        }
         #correctanswer
         {
             
@@ -164,7 +175,8 @@
             <h1> The first note is a C, What is the second? </h1>
             <h2>Please press the button to play the question</h2>
             
-            <button id= "button1">Play question</button>
+            <button id= "button1">Play question!</button>
+            <button id= "button2">Next question!</button>
             
             <audio id="audio1" >
                 <source src="C-E.wav"></source>
@@ -224,6 +236,16 @@
                 {
                     console.log("Incorrect!"); 
                     button5.style.background = "red";
+                }
+                function nextquestion(event)
+                {
+                    var show = document.getElementById('button2');
+    if (show.style.display === 'none') {
+        show.style.display = 'block';
+    } else {
+        show.style.display = 'none';
+    }
+                    console.log("showing/hiding question");
                 }
            
                 </script>
