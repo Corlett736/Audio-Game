@@ -113,7 +113,7 @@
     <body>
         
         <ul>
-            <li class="dropbutton" ><a href="index.html">Home.</a></li>
+            <li class="dropbutton" ><a href="index.html">Home</a></li>
             <li class="dropbutton" ><a href="#Quiz">Multiple-Choice Quizzes</a>
                 <div class="droplinks"> <a href="BpmQuiz.html">Bpm Quiz</a> <a href="#KsQuiz">Key Signature Quiz</a> <a href="#PQuiz">Pitch Quiz</a> <a href="#RQuiz">Random Quiz</a> </div> </li>
             <li class="dropbutton" ><a href="#HarderQuiz">Harder Quizzes</a>
@@ -133,10 +133,10 @@
             
             <div>
                 <ul>
-                    <li class= "button" id= "incorrectanswer1"><b> C</b></li>
-                    <li class= "button" id= "incorrectanswer2"><b> D</b></li>
-                    <li class= "button" id= "incorrectanswer3"><b> F</b></li>
-                    <li class= "button" id= "correctanswer" ><b> E </b></li>
+                    <li  id= "incorrectanswer1"><b> C</b></li>
+                    <li id= "incorrectanswer2"><b> D</b></li>
+                    <li  id= "incorrectanswer3"><b> F</b></li>
+                    <li  id= "correctanswer" ><b> E </b></li>
                     </div>
             
             
@@ -149,6 +149,7 @@
                 {
                     console.log("Playing Question!");
                     audio1.play();
+                    button1.style.background= "green";
                     
                 }
             var button2 = document.getElementById("correctanswer");
@@ -157,7 +158,7 @@
                 {
                 
                     console.log("Correct!");
-                    button2.style.background-color= "green";
+                    button2.style.background= "green";
                     
                 }
              
