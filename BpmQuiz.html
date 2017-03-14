@@ -154,6 +154,7 @@
                 {
                     console.log("Playing Question!");
                     audio1.play();
+                    
                 }
             var button2 = document.getElementById("correctanswer");
                 button2.addEventListener("click", Correct);
@@ -161,7 +162,7 @@
                 {
                 
                     console.log("Correct!");
-                    
+                    button2.style.backgroundcolor = green;
                     
                 }
              
@@ -170,7 +171,7 @@
                 function inCorrect(event)
                 {
                     console.log("Incorrect!");
-                    
+                    button3.style.backgroundcolor = red;
                     
                 }
              var button4 = document.getElementById("incorrectanswer2");
@@ -178,14 +179,15 @@
                 function inCorrect(event)
                 {
                     console.log("Incorrect!");
-                   
+                   button4.style.backgroundcolor = red;
                     
                 }
                  var button5 = document.getElementById("incorrectanswer3");
                 button5.addEventListener("click", inCorrect);
                 function inCorrect(event)
                 {
-                    console.log("Incorrect!");   
+                    console.log("Incorrect!"); 
+                    button5.style.backgroundcolor = red;
                 }
            
                 </script>
