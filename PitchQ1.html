@@ -169,7 +169,7 @@
     <body>
         
         <ul>
-            <li class="dropbutton" ><a href="index.html">Home!</a></li>
+            <li class="dropbutton" ><a href="index.html">Home</a></li>
             <li class="dropbutton" ><a href="#Quiz">Multiple Choice Quizzes</a>
                 <div class="droplinks"> <a href="BpmQuiz.html">Bpm Quiz</a> <a href="#KsQuiz">Key Signature Quiz</a> <a href="#PQuiz">Pitch Quiz</a> <a href="#RQuiz">Random Quiz</a> </div> </li>
             <li class="dropbutton" ><a href="#HarderQuiz">Harder Quizzes</a>
@@ -189,7 +189,7 @@
         <audio id="incorrectanswer" >
                 <source src="Incorrectanswer.wav"></source>
             </audio>
-    <audio id="correctanswer" >
+    <audio id="correctanswersound" >
                 <source src="Correctanswer.wav"></source>
             </audio>
         </div>
@@ -219,7 +219,7 @@
                 button2.addEventListener("click", Correct);
                 function Correct(event)
                 {
-                
+                correctanswersound.play();
                     console.log("Correct!");
                     button2.style.background= "green";
                 
