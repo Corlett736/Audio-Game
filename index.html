@@ -10,12 +10,13 @@
                 margin: 0;
                 padding: 0;
                 overflow: hidden;
-                background-color: white;
+                background-color: transparent;
             }
         li {
             float: left;
         }
         li a {
+            font-weight: bold; 
             display: block;
             border-radius: 15px;
             color: blue;
@@ -35,12 +36,13 @@
         }
         .droplinks
         {
+            font-weight: none;
             border-radius: 15px;
             position: absolute;
             min-width: 140px;
             display: none;
             width: 318px;
-            border: solid 2px white;
+            border: solid 2px transparent;
             height: 620px;
             
         }
@@ -50,7 +52,7 @@
             color: blue;
             padding: 25px;
             display: block;
-            font-size: 275%;
+            font-size: 200%;
             height: 100px;
             width: 265px;
         }
@@ -68,18 +70,13 @@
             text-decoration: none;
             border: solid 2px black;
             width: 420px;
-            height:380px;
+            height:350px;
             
-        }
-        li b:hover
-        {
-            background-color: white;
-            color: lightblue;
         }
         div{
             background-color: white;
             width: 950px;
-            height: 650px;
+            height: 230px;
             margin:0;
             padding:0;
         }
@@ -89,14 +86,73 @@
             background-color: white;
         }
         
-        button
+       #button1
         {
-            position: absolute;
+            
             left: 320px;
             border-radius: 15px;
-            width: 300px;
-            height: 100px;
-            font-size: 200%;
+            width: 350px;
+            height: 150px;
+            font-size: 300%;
+            font-weight: bold; 
+            color: blue;
+            background-color:black;
+        }
+       #button2
+        {
+            position: absolute;
+            left: 275px;
+            top: 830px;
+            display: none;
+            border-radius: 15px;
+            width: 400px;
+            height: 300px;
+            font-size: 300%;
+            font-weight: bold;
+            color: blue;
+            background-color:black;
+        }
+        #correctanswer
+        {
+            
+            border-radius: 15px;
+            width: 470px;
+            height: 380px;
+            font-size: 500%;
+            font-weight: bold; 
+            color: blue;
+            background-color:black;
+        }
+            #incorrectanswer3
+        {
+            
+            border-radius: 15px;
+            width: 470px;
+            height: 380px;
+            font-size: 500%;
+            font-weight: bold; 
+            color: blue;
+            background-color:black;
+        }
+            #incorrectanswer1
+        {
+            
+            border-radius: 15px;
+            width: 470px;
+            height: 380px;
+            font-size: 500%;
+            font-weight: bold; 
+            color: blue;
+            background-color:black;
+        }
+            #incorrectanswer2
+        {
+            
+            border-radius: 15px;
+            width: 470px;
+            height: 380px;
+            font-size: 500%;
+            font-weight: bold; 
             color: blue;
             background-color:black;
         }
@@ -106,20 +162,22 @@
                 background-color: blue;
                 
             }
+            
         </style>
         
     </head>
     <body>
         
         <ul>
-            <li class="dropbutton" ><a href="index.html">Home!</a></li>
-            <li class="dropbutton" ><a href="#Quiz">Multiple-Choice Quizzes</a>
-                <div class="droplinks"> <a href="BpmQuiz.html">Bpm Quiz</a> <a href="#KsQuiz">Key Signature Quiz</a> <a href="PitchQ1.html">Pitch Quiz</a> <a href="#RQuiz">Random Quiz</a> </div> </li>
-            <li class="dropbutton" ><a href="HarderQuiz">Harder Quizzes</a>
-                <div class="droplinks"> <a href="#BpmQuiz.html">Bpm Quiz</a> <a href="#KsQuiz">Key Signature Quiz</a> <a href="PitchQ1.html">Pitch Quiz</a> <a href="#RQuiz">Random Quiz</a> </div> </li>
+            <li class="dropbutton" ><a href="index.html">Home</a></li>
+            <li class="dropbutton" ><a href="#Quiz">Multiple Choice Quizzes</a>
+                <div class="droplinks"> <a href="BpmQuiz.html">Bpm Quiz</a> <a href="#KsQuiz">Key Signature Quiz</a> <a href="#PQuiz">Pitch Quiz</a> <a href="#RQuiz">Random Quiz</a> </div> </li>
+            <li class="dropbutton" ><a href="#HarderQuiz">Harder Quizzes</a>
+                <div class="droplinks"> <a href="#BpmQuiz.html">Bpm Quiz</a> <a href="#KsQuiz">Key Signature Quiz</a> <a href="#PQuiz">Pitch Quiz</a> <a href="#RQuiz">Random Quiz</a> </div> </li>
         </ul>
         <div>
-            <h1> THIS IS THE HOMEPAGE!</h1>
-    
+            
+            <h1>  This is the homepage! </h1>
+   
             </body>
 </html>
