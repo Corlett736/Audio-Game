@@ -186,88 +186,17 @@
             <audio id="audio1" >
                 <source src="120BPM.wav"></source>
             </audio>
-        <audio id="incorrectanswer" >
-                <source src="Incorrectanswer.wav"></source>
-            </audio>
-    <audio id="correctanswersound" >
-                <source src="Correctanswer.wav"></source>
-            </audio>
-        </div>
-            
-            <div>
-                <ul>
-                    <button  id= "correctanswer"><b> 120Bpm</b></button>
-                    <button    id= "incorrectanswer2"><b> 150bpm</b></button>
-                    <button  id= "incorrectanswer3"><b> 100bpm</b></button>
-                    <button  id=  "incorrectanswer1"><b> 90bpm </b></button>
-                    </div>
-            
+       <p>
+   <label for="from">Your answer:</label>
+<br />
+   <textarea name="message" id="message" style="height: 100px; width: 200px;"     onclick="this.value=''">.</textarea>
+</p>  
             
             </ul>
             
             <script>
-                var button1 = document.getElementById("button1");
-                button1.addEventListener("click", buttonActions);
-                function buttonActions(event)
-                {
-                    console.log("Playing Question!");
-                    audio1.play();
-                    
-                    
-                }
-            var button2 = document.getElementById("correctanswer");
-                button2.addEventListener("click", Correct);
-                function Correct(event)
-                {
                 
-                    console.log("Correct!");
-                    button2.style.background= "green";
-                   var show = document.getElementById('button2');
-    if (show.style.display === 'none') {
-        show.style.display = 'block';
-    } else {
-        show.style.display = 'none';
-    }
-                    console.log("showing/hiding question");
-                correctanswersound.play();
-                    
-                }
-             
-            var button3 = document.getElementById("incorrectanswer1");
-                button3.addEventListener("click", inCorrect1);
-                function inCorrect1(event)
-                {
-                    console.log("Incorrect!");
-                    button3.style.background = "red";
-                    incorrectanswer.play();
-                }
-             var button4 = document.getElementById("incorrectanswer2");
-                button4.addEventListener("click", inCorrect2);
-                function inCorrect2(event)
-                {
-                    console.log("Incorrect!");
-                   button4.style.background = "red";
-                    incorrectanswer.play();
-                    
-                }
-                 var button5 = document.getElementById("incorrectanswer3");
-                button5.addEventListener("click", inCorrect3);
-                function inCorrect3(event)
-                {
-                    console.log("Incorrect!"); 
-                    button5.style.background = "red";
-                    incorrectanswer.play();
-                }
-                
-                
-                    var show = document.getElementById('button2');
-    if (show.style.display === 'none') {
-        show.style.display = 'block';
-    } else {
-        show.style.display = 'none';
-    }
-                    console.log("showing/hiding question");
-                
+         
            
                 </script>
             </body>
