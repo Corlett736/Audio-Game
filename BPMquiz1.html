@@ -177,23 +177,29 @@
         </ul>
         <div>
             
-            <h1>  The first note is a C, What is the second? </h1>
+            <h1>  What is the Bpm of this?</h1>
         
             
             <button id= "button1">Play question!</button>
             <button id= "button2"> <a href = "PitchQ2.html"> CORRECT!!!     WELL DONE!!!      Next question!</a></button>
            
             <audio id="audio1" >
-                <source src="C-E.wav"></source>
+                <source src="120BPM.wav"></source>
+            </audio>
+        <audio id="incorrectanswer" >
+                <source src="Incorrectanswer.wav"></source>
+            </audio>
+    <audio id="correctanswersound" >
+                <source src="Correctanswer.wav"></source>
             </audio>
         </div>
             
             <div>
                 <ul>
-                    <button  id= "incorrectanswer1"><b> C</b></button>
-                    <button    id= "incorrectanswer2"><b> D</b></button>
-                    <button  id= "incorrectanswer3"><b> F</b></button>
-                    <button  id= "correctanswer" ><b> E </b></button>
+                    <button  id= "incorrectanswer1"><b> 120Bpm</b></button>
+                    <button    id= "incorrectanswer2"><b> 150bpm</b></button>
+                    <button  id= "incorrectanswer3"><b> 100bpm</b></button>
+                    <button  id= "correctanswer" ><b> 90bpm </b></button>
                     </div>
             
             
@@ -223,7 +229,7 @@
         show.style.display = 'none';
     }
                     console.log("showing/hiding question");
-                
+                correctanswersound.play();
                     
                 }
              
@@ -233,7 +239,7 @@
                 {
                     console.log("Incorrect!");
                     button3.style.background = "red";
-                    
+                    incorrectanswer.play();
                 }
              var button4 = document.getElementById("incorrectanswer2");
                 button4.addEventListener("click", inCorrect2);
@@ -241,6 +247,7 @@
                 {
                     console.log("Incorrect!");
                    button4.style.background = "red";
+                    incorrectanswer.play();
                     
                 }
                  var button5 = document.getElementById("incorrectanswer3");
@@ -249,6 +256,7 @@
                 {
                     console.log("Incorrect!"); 
                     button5.style.background = "red";
+                    incorrectanswer.play();
                 }
                 
                 
