@@ -184,7 +184,13 @@
             <button id= "button2"> <a href = "PitchQ2.html"> CORRECT!!!     WELL DONE!!!      Next question!</a></button>
            
             <audio id="audio1" >
-                <source src="C-E.wav"></source>
+                <source src="60BPM.wav"></source>
+            </audio>
+        <audio id="incorrectanswer" >
+                <source src="Incorrectanswer.wav"></source>
+            </audio>
+    <audio id="correctanswersound" >
+                <source src="Correctanswer.wav"></source>
             </audio>
         </div>
             
@@ -223,7 +229,7 @@
         show.style.display = 'none';
     }
                     console.log("showing/hiding question");
-                
+                correctanswersound.play();
                     
                 }
              
@@ -233,6 +239,7 @@
                 {
                     console.log("Incorrect!");
                     button3.style.background = "red";
+                    incorrectanswer.play();
                     
                 }
              var button4 = document.getElementById("incorrectanswer2");
@@ -241,6 +248,7 @@
                 {
                     console.log("Incorrect!");
                    button4.style.background = "red";
+                    incorrectanswer.play();
                     
                 }
                  var button5 = document.getElementById("incorrectanswer3");
@@ -249,6 +257,7 @@
                 {
                     console.log("Incorrect!"); 
                     button5.style.background = "red";
+                    incorrectanswer.play();
                 }
                 
                 
