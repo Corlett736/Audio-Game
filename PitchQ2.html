@@ -186,6 +186,12 @@
             <audio id="audio1" >
                 <source src="C-B.wav"></source>
             </audio>
+        <audio id="incorrectanswer" >
+                <source src="Incorrectanswer.wav"></source>
+            </audio>
+    <audio id="correctanswersound" >
+                <source src="Correctanswer.wav"></source>
+            </audio>
         </div>
             
             <div>
@@ -223,7 +229,7 @@
         show.style.display = 'none';
     }
                     console.log("showing/hiding question");
-                
+                correctanswersound.play();
                     
                 }
              
@@ -233,6 +239,7 @@
                 {
                     console.log("Incorrect!");
                     button3.style.background = "red";
+                    incorrectanswer.play();
                     
                 }
              var button4 = document.getElementById("incorrectanswer2");
@@ -241,7 +248,7 @@
                 {
                     console.log("Incorrect!");
                    button4.style.background = "red";
-                    
+                    incorrectanswer.play();
                 }
                  var button5 = document.getElementById("incorrectanswer3");
                 button5.addEventListener("click", inCorrect3);
@@ -249,6 +256,7 @@
                 {
                     console.log("Incorrect!"); 
                     button5.style.background = "red";
+                    incorrectanswer.play();
                 }
                 
                 
