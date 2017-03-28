@@ -185,12 +185,13 @@
             </audio>
        <p> 
            <h1>Choose your BPM on the slider</h1>
-   <input type="range" id="Sliderval" value="90">
+   <input type="range" id="Sliderval" max= "200" min="0" step="10">
         <button id= button2 >Check</button>
 
 </p>  
+<p id="demo"></p>
 
-           
+
             </ul>
             
             <script>
@@ -218,6 +219,12 @@
                 function SliderCheck(event)
                 {
                     console.log("Sliderval")
+                   
+
+    var slidenum = document.getElementById("Sliderval").value;
+    document.getElementById("demo").innerHTML = slidenum;
+
+           
                 }
                 
                 
