@@ -167,7 +167,7 @@
     <body>
         
         <ul>
-            <li class="dropbutton" ><a href="index.html">Home</a></li>
+            <li class="dropbutton" ><a href="index.html">Homee</a></li>
             <li class="dropbutton" ><a href="#Quiz">Multiple Choice Quizzes</a>
                 <div class="droplinks"> <a href="BPMquiz1.html">Bpm Quiz</a> <a href="#KsQuiz">Key Signature Quiz</a> <a href="PitchQ1.html">Pitch Quiz</a> <a href="#RQuiz">Random Quiz</a> </div> </li>
             <li class="dropbutton" ><a href="#HarderQuiz">Harder Quizzes</a>
@@ -185,7 +185,7 @@
             </audio>
        <p> 
            <h1>Choose your BPM on the slider</h1>
-   <input type="range" id="Sliderval" max= "200" min="0" step="10">
+   <input type="range" id="Sliderval" max= "200" min="0" step="10" width = "200%" height= "200%">
         <button id= button2 >Check</button>
 
 </p>  
@@ -211,8 +211,8 @@
                 {
                     console.log("Checking");
              
-                    var slidenum = document.getElementById("Sliderval").value;
-                    if(slidenum = "120")
+                    var slideval = document.getElementById("Sliderval").value;
+                    if(slideval = "120")
                     {
                         console.log("correct");
                     }
