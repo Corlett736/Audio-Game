@@ -184,8 +184,9 @@
                 <source src="120BPM.wav"></source>
             </audio>
        <p> 
-           <h1>Type your answer into the box</h1>
-   <input name="message" id="message" style=" position: absolute; top: 650px; height: 50px; width: 200px; maxlength: 2; "     onclick="this.value=''"></input>
+           <h1>Choose your BPM on the slider</h1>
+   <input id="defaultSlider" type="range" min="50" max="150" />
+<p class="note">Current value: <span id="currentValue">0</span></p>
 </p>  
 
            
@@ -211,6 +212,20 @@
                     console.log("correct")
                     }
                 }
+                $(function(){
+
+	var currentValue = $('#currentValue');
+
+	$('#defaultSlider').change(function(){
+	    currentValue.html(this.value);
+	});
+
+	// Trigger the event on load, so
+	// the value field is populated:
+
+	$('#defaultSlider').change();
+
+});
            
                 </script>
             </body>
