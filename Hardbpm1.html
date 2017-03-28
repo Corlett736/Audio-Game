@@ -184,11 +184,11 @@
                 <source src="120BPM.wav"></source>
             </audio>
        <p> 
-           <h1>Type your answer into the box and click submit </h1>
+           <h1>Type your answer into the box</h1>
    <input name="message" id="message" style=" position: absolute; top: 650px; height: 50px; width: 200px; maxlength: 2; "     onclick="this.value=''"></input>
 </p>  
 
-      <button id= "button2">Submit</button>      
+           
             </ul>
             
             <script>
@@ -201,6 +201,15 @@
                     audio1.play();
                     
                     
+                }
+                var correctanswer = documentgetElementById("message")
+                message.addEventListener("click", Correctanswer)
+                function Correctanswer(event)
+                { 
+                    if (message = "120")
+                    {
+                    console.log("correct")
+                    }
                 }
            
                 </script>
