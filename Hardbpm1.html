@@ -116,6 +116,20 @@
             color: blue;
             background-color:black;
         }
+            #button3
+        {
+            position: absolute;
+            left: 275px;
+            top: 830px;
+            display: none;
+            border-radius: 15px;
+            width: 400px;
+            height: 300px;
+            font-size: 300%;
+            font-weight: bold;
+            color: blue;
+            background-color:black;
+        }
         #correctanswer
         {
             
@@ -207,6 +221,7 @@
         
             
             <button id= "button1">Play question!</button>
+            <button id="button3"><a href = "PitchQ2.html"> CORRECT!!!     WELL DONE!!!      Next question!</a></button>
            
             <audio id="audio1" >
                 <source src="120BPM.wav"></source>
@@ -220,7 +235,7 @@
             </audio>
        <p> 
            <h1>Choose your BPM on the slider</h1>
-   <input type="range" id="Sliderval" max= "200" min="0" step="10" >
+   <input type="range" id="Sliderval" max= "200" min="0" step="10">
         <button id= button2 >Check</button>
 
 </p>  
@@ -251,7 +266,7 @@
                     {
                         console.log("correct");
                         correctanswersound.play();
-                                            var show = document.getElementById('button2');
+                                            var show = document.getElementById('button3');
     if (show.style.display === 'none') {
         show.style.display = 'block';
     } else {
