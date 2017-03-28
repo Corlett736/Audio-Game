@@ -185,8 +185,7 @@
             </audio>
        <p> 
            <h1>Choose your BPM on the slider</h1>
-   <input id="defaultSlider" type="range" min="50" max="150" />
-<p class="note">Current value: <span id="currentValue">0</span></p>
+   
 </p>  
 
            
@@ -204,20 +203,9 @@
                     
                 }
                
-                $(function(){
+                
 
-	var currentValue = $('#currentValue');
 
-	$('#defaultSlider').change(function(){
-	    currentValue.html(this.value);
-	});
-
-	// Trigger the event on load, so
-	// the value field is populated:
-
-	$('#defaultSlider').change();
-
-});
            
                 </script>
             </body>
