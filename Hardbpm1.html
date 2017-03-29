@@ -264,14 +264,16 @@
                     var slideval = document.getElementById("Sliderval").value;
                     if(slideval == "120")
                     {
-                        
-                                            var show = document.getElementById("button3");
-    if (show.style.display == "none") {
+                        console.log("correct");
+      var show = document.getElementById("button3");
+    if (show.style.display == "none")
+    {
         show.style.display = "block";
-    } else {
+    }
+    else {
         show.style.display = "none";
     }
-                        console.log("correct");
+                        console.log("showing question");
                         correctanswersound.play();
                     }
                     else
