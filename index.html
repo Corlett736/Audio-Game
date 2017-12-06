@@ -12,7 +12,7 @@
             
             <h1>  WELCOME TO MY AUDIO GAME </h1>
             <h1> CLICK THE BUTTON TO START THE GAME</h1>
-            <h1> GOOD LUCK! GG:D</h1>
+            <h1> GOOD LUCK! GGG:D</h1>
       
         <button  id= "button1"><b> CLICK ME BBY</b></button>
         <script>
@@ -20,10 +20,9 @@
             var button1 = document.getElementById("button1");
                 button1.addEventListener("click", buttonActions);
                 function buttonActions(event)
-                {
-                    console.log("Playing Question!");
-                     var player = new Tone.Player("./Clock.wav").toMaster(); 
-                
+            {
+                     var player = new Tone.Player("Clock.wav").toMaster(); 
+                Player.autostart = true;
                 }
         </script>
         
